@@ -1,1 +1,90 @@
-/* Denna fil skall innehålla din CSS kod */
+#wrapper{
+    display: grid;
+    grid-template-rows: 100px 25px 100px;
+    grid-template-columns: 4fr 6fr 4fr;
+    grid-gap: 2px;
+    border: solid 1px black; 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    width:90vw;
+    min-height:100vh;
+    margin:auto;
+    grid-template-areas: 
+     'hd hd hd'
+     'a1 a2 a3'
+     'na na na'
+     'sec sec sec'
+     'sec2 sec2 sec2'
+     'sec3 sec3 sec3';
+     
+}
+
+header {
+    grid-area: hd;
+    background-color: rgb(41, 128, 185);
+    text-align: center ;
+    margin: 3px;
+
+}
+
+
+.article {
+    height: 25px;
+}
+
+#art1{
+    grid-area: a1;
+    text-align: center;
+}
+
+#art2{
+    grid-area: a2;
+    text-align: center;
+}
+
+#art3{
+    grid-area: a3;
+    text-align: center;
+}
+
+a {
+    margin: 3px;
+    display:block
+
+}
+
+nav{
+    grid-area: na;
+    padding: 10px;
+    margin: 3px;
+
+}
+
+#section1 {
+    grid-area: sec;
+    display: grid;
+    border: solid 1px;
+    text-align:left;
+    padding: 20px;
+}
+
+#section2 {
+    grid-area: sec2;
+    display: grid;
+    border: solid 1px;
+    text-align:left;
+    padding: 20px;
+}
+
+#section3 {
+    grid-template-columns: sec3;
+    display: grid;
+    border: solid 1px;
+    text-align:left;
+    padding: 20px;
+}
+
+section:hover{
+    transition: 1s;
+    font-size: 20px;
+}
