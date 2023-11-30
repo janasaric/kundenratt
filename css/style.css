@@ -24,6 +24,7 @@ header {
     background-color: rgb(41, 128, 185);
     text-align: center ;
     margin: 3px;
+    text-shadow: 3px 3px black;
 
 }
 
@@ -35,16 +36,19 @@ header {
 #art1{
     grid-area: a1;
     text-align: center;
+    padding: 10px;
 }
 
 #art2{
     grid-area: a2;
     text-align: center;
+    padding: 10px;
 }
 
 #art3{
     grid-area: a3;
     text-align: center;
+    padding: 5%;
 }
 
 a {
@@ -77,7 +81,7 @@ nav{
 }
 
 #section3 {
-    grid-template-columns: sec3;
+    grid-area: sec3;
     display: grid;
     border: solid 1px;
     text-align:left;
