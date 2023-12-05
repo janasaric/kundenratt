@@ -13,9 +13,10 @@
      'hd hd hd'
      'a1 a2 a3'
      'na na na'
-     'sec sec sec'
+     'box box box';
+     /* 'sec sec sec'
      'sec2 sec2 sec2'
-     'sec3 sec3 sec3';
+     'sec3 sec3 sec3'; */
      
 }
 
@@ -64,13 +65,28 @@ nav{
 
 }
 
+
 #section1 {
     grid-area: sec;
     display: grid;
     border: solid 1px;
     text-align:left;
     padding: 20px;
+    /* width: 200px; */
 }
+
+#article {
+    display: flex;
+}
+
+#article2 {
+    display: flex; 
+}
+
+#article3 {
+    display: flex;
+}
+
 
 #section2 {
     grid-area: sec2;
@@ -78,6 +94,7 @@ nav{
     border: solid 1px;
     text-align:left;
     padding: 20px;
+    /* width: 200px; */
 }
 
 #section3 {
@@ -86,9 +103,18 @@ nav{
     border: solid 1px;
     text-align:left;
     padding: 20px;
+    /* width: 200px; */
 }
 
 section:hover{
     transition: 1s;
     font-size: 20px;
+}
+
+#box {
+   grid-area: box;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    
 }
